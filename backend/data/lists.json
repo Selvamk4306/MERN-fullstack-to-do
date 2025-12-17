@@ -1,0 +1,44 @@
+{
+    "to-do-lists": [
+        {
+            "title": "Work",
+            "desc": [
+                "Finish project report",
+                "Email client",
+                "Prepare presentation"
+            ],
+            "status": "in-progress",
+            "date": "2024-06-15T10:30:00Z"
+        },
+        {
+            "title": "Personal",
+            "desc": [
+                "Buy groceries",
+                "Call mom",
+                "Go for a run"
+            ],
+            "status": "completed",
+            "date": "2024-06-14T09:00:00Z"
+        },
+        {
+            "title": "Shopping",
+            "desc": [
+                "New shoes",
+                "Birthday gift for Sarah",
+                "Kitchen supplies"
+            ],
+            "status": "to-do",
+            "date": "2024-06-16T14:15:00Z"
+        },
+        {
+            "title": "Family",
+            "desc": [
+                "Plan weekend trip",
+                "Book doctor appointment",
+                "Organize family photos"
+            ],
+            "status": "in-progress",
+            "date": "2024-06-13T11:45:00Z"
+        }
+    ]
+}
