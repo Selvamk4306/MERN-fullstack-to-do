@@ -22,6 +22,8 @@ const Home = () => {
     const responce =  await fetch('/to-dos')
     const json = await responce.json();
 
+    console.log(json);
+
     if(responce.ok){
       //setToDos(json.data)
 
