@@ -43,7 +43,7 @@ const Home = () => {
   
   return (
     <div className='layout'>
-      <div className=''>
+      <div className='left'>
         <Addtodos />
       </div>
       <div className='right'>
