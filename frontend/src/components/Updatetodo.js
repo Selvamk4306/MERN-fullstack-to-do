@@ -46,7 +46,7 @@ const Updatetodo = ({ selectedToDo, clearSelectedToDo }) => {
 
     try {
       const response = await fetch(
-        `/to-dos/${encodeURIComponent(selectedToDo.title)}`,
+        `https://mern-fullstack-to-do.onrender.com/to-dos/${encodeURIComponent(selectedToDo.title)}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },

@@ -39,7 +39,7 @@ function Update() {
 
     useEffect(() => {
       const fetchTodos = async () => {
-        const responce = await fetch('/to-dos')
+        const responce = await fetch('https://mern-fullstack-to-do.onrender.com/to-dos')
         const json = await responce.json()
   
         if (responce.ok) {

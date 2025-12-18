@@ -1,6 +1,7 @@
 const express = require("express");
 require("dotenv").config(); // ✅ correct
 const path = require("path");
+const cors = require("cors");
 
 const to_dos = require("./routes/to-do-list-route");
 const DbConnection = require("./database_connection");
@@ -13,6 +14,10 @@ DbConnection();
 // Middleware
 app.use(express.json());
 
+app.use(cors({
+    origin: '*'
+}))
+
 // API routes FIRST ✅
 app.use("/to-dos", to_dos);
 
@@ -22,15 +27,8 @@ app.get("/", (req, res) => {
   });
 });
 
-// Serve frontend build (AFTER APIs) ✅
-// app.use(express.static(path.join(__dirname, "../frontend/build")));
-
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
-// });
-
 // PORT (Render-safe) ✅
-const PORT =  4000;
+const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

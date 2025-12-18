@@ -19,7 +19,7 @@ const Home = () => {
 
   useEffect(() => {
   const fetchtodos = async () =>{
-    const responce =  await fetch('/to-dos')
+    const responce =  await fetch('https://mern-fullstack-to-do.onrender.com/to-dos')
     const json = await responce.json();
 
     console.log(json);

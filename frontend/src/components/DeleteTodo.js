@@ -13,7 +13,7 @@ const DeleteTodo = () => {
 
     const handleDelete = async () => {
         try{
-            const responce = await fetch(`/to-dos/${encodeURIComponent(selectedToDo.title)}`,
+            const responce = await fetch(`https://mern-fullstack-to-do.onrender.com/to-dos/${encodeURIComponent(selectedToDo.title)}`,
             {
                 method: 'DELETE'
             });

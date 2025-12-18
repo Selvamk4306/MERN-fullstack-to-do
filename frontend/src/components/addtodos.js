@@ -19,7 +19,7 @@ const Addtodos = () => {
 
         console.log("Sending toDo:", toDo);
 
-        const responce = await fetch('/to-dos', {
+        const responce = await fetch('https://mern-fullstack-to-do.onrender.com/to-dos', {
             method: 'POST',
             body: JSON.stringify(toDo),
             headers: {
