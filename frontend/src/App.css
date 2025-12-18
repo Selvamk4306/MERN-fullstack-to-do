@@ -40,22 +40,24 @@ element {
 }
 
 
-.right{
-  display: flex;
-  justify-content: flex-end;
-  display: grid;
-  grid-template-columns: repeat(2, 480px);
-  gap: 20px;
-  margin: 40px;
-}
-
 .layout{
   display: grid;
-  grid-template-columns: 350px 1fr;
-  gap: 20px;
+  grid-template-columns: 1.3fr 2fr;
+  gap: 40px;
   align-items: flex-start;
   background-color: beige;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
 }
+
+.right{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+
 
 .card{
   display: flex;
@@ -104,14 +106,6 @@ element {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);  
   z-index: 10;                                  
-}
-
-.left{
-  display: flex;
-  margin-left: 5rem;
-  gap: 20px;
-  font-size: medium;
-  margin: 20px 80px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
