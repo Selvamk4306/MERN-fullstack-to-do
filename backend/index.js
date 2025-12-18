@@ -16,7 +16,7 @@ app.use(express.json());
 // API routes FIRST ✅
 app.use("/to-dos", to_dos);
 
-app.get("/api", (req, res) => {
+app.get("/", (req, res) => {
   res.status(200).json({
     message: "API is running"
   });
