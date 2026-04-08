@@ -118,14 +118,3 @@ npm start
 ## 🙌 Acknowledgements
 
 This project was built as part of my full-stack development learning journey using the MERN stack.
-
----
-
-## 📬 Contact
-
-If you’d like to connect or collaborate:
-
-* GitHub: https://github.com/YOUR_USERNAME
-* LinkedIn: (Add your profile link)
-
----
